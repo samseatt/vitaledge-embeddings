@@ -1,0 +1,14 @@
+# File: vitaledge-embeddings/docker-compose.yml
+version: "3.9"
+
+services:
+  vitaledge-embeddings:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}  # Pass API key from .env file
+    volumes:
+      - .:/app

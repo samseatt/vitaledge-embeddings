@@ -1,0 +1,25 @@
+# requirements.in
+
+# FastAPI and related dependencies
+fastapi
+uvicorn
+
+dotenv  # For environment variable management
+
+# Sentence Transformers for local embeddings
+sentence-transformers
+
+# OpenAI API for embedding generation
+openai
+
+# For testing
+pytest
+pytest-asyncio
+
+# For performance optimization
+onnxruntime
+
+# Optional: VectorDB client libraries (can be commented out if not used directly)
+pinecone-client
+weaviate-client
+
